@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            margin: auto;
+            background-color: aliceblue;
+            height: 300px;
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 1/4;
+        }
+
+        img {
+            height: 200px;
+
+        }
+
+        .name {
+            margin: auto;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            color: white;
+            background-color: blue;
+            border-radius: 6px;
+        }
+
+        @media (max-width:500px) {
+            .card {
+                margin: auto;
+                background-color: aliceblue;
+                width: 500px;
+            }
+
+            .image {
+                display: flex;
+                justify-content: center;
+                height: 200px;
+            }
+
+            .name {
+                display: flex;
+                justify-content: center;
+            }
+
+            .about {
+                display: flex;
+                justify-content: center;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+            }
+
+            button {
+                color: white;
+                background-color: blue;
+                border-radius: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="pfp.jpg">
+        </div>
+        <div class="name">
+            <h1>Naga Poojith</h1>
+        </div>
+        <div class="about">
+            <p>Learning Web Development</p>
+        </div>
+        <div class="buttons">
+            <div class="but">
+                <button>Contact</button>
+                <button>Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

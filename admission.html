@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Admission Form</h1>
+    </div>
+
+    <form>
+        <label>
+            <div>
+                Full Name:
+                <input type="text">
+            </div>
+        </label>
+    </form>
+
+    <label>
+        <div>
+            Email:
+            <input type="Email">
+        </div>
+    </label>
+
+    <label>
+        <div>
+            Phone number:
+            <input type="tel">
+        </div>
+    </label>
+
+    <label>
+        <div>
+            Age:
+            <input type="number" min="15" max="40">
+
+    </label></div>
+
+    <div><label>
+            DOB:
+            <input type="date" max="2010-01-01" min="1955-01-01">
+        </label></div>
+
+    <p>GENDER:</p>
+    <div><label>male</label>
+        <input name="gender" type="radio"><br>
+    </div>
+    <div><label>female</label>
+        <input name="gender" type="radio"><br>
+    </div>
+    <div><label>Others</label>
+        <input name="gender" type="radio">
+    </div>
+
+
+    <p>SERVICES:</p>
+    <div style="color: red;"> <label>
+            bus service:
+            <input type="checkbox"><br>
+            Accomodation:
+            <input type="checkbox">
+        </label></div>
+
+    <p>Blood:</p>
+    <select>
+        <option>o+</option>
+        <option>o-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>AB+</option>
+    </select>
+
+    <div><label>Describe yourself in <span style="color: purple;">200 words</span>:</label>
+        <textarea>Description</textarea>
+    </div>
+
+    <button>Submit</button>
+    </form>
+</body>
+
+</html>

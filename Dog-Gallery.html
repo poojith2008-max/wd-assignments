@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            justify-items: center;
+            background-color: bisque;
+            gap: 10px;
+        }
+        .box{
+            border: 5px solid transparent;
+            height: 200px;
+            width: 300px;
+
+            border-radius: 8px;
+        }
+        h1{
+            background-color: rgb(245, 191, 109);
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        @media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}   
+    </style>
+</head>
+<body>
+    <h1><u>Dog Gallery</u></h1>
+   <div class="container">
+    <div class="box">
+        <img src="dog.jpg">
+    </div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+    <div class="box"><img src="dog.jpg"></div>
+   </div> 
+</body>
+</html>
